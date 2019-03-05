@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Crystal Counter</title>
+</head>
+
+<body>
+  <section>
+    <div class="wrapper">
+      <h1>Crystal Counter</h1>
+      <div id="rules">
+        <h3>Here's How the Game Works:</h3>
+        <ul>
+          <li>A random number will be shown in the center.</li>
+          <li>
+            Click on any of the crystals and your total score will show up on the bottom
+            of the container.
+          </li>
+          <li>
+            If you match the number, you get a win. If you don't, you get a
+            loss.
+          </li>
+        </ul>
+      </div>
+      <div id="workSpace">
+        <div id="number-to-guess"></div>
+        <div id="records">
+          <div>
+            <h3>Wins: <span id="wins"></span></h3>
+            <h3>Losses: <span id="losses"></span></h3>
+          </div>
+        </div>
+        <div id="crystals">
+          <img src="./assets/images/jeremejevite-1000.jpg" alt="crystal 1" class="crystal crystal-img-0" tabindex="0" />
+          <img src="./assets/images/burma-ruby-1000.jpg" alt="crystal 2" class="crystal crystal-img-1" tabindex="0" />
+          <img src="./assets/images/tanzanite-sydney-king-stone-gems-150286a.jpg" alt="crystal 3" class="crystal crystal-img-2"
+            tabindex="0" />
+          <img src="./assets/images/jeremejevite-1000.jpg" alt="crystal 4" class="crystal crystal-img-3" tabindex="0" />
+        </div>
+        <div id="totalScore"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
